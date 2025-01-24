@@ -3,20 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Html feladat</title>
+    <title>Helikopter Szerelés</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    Hivatkozás wikipédiára:
-    <p><a link href="https://www.wikipedia.org" target="_blank">WIKIPÉDIA<a/></p>
-    <p><a href="masodikoldal.html">Második oldal</a></p>
-    <div class="tablakeret">
-        <p>Ha haza kell menni,  megölelni esztit</p>
-        <table>
-            <tr>
-            <th>Tantárgy</th>
-            <th>Időpont</th>
-            </tr>
-        </table>
-    </div>
+    <header>
+        <div class="container">
+            <h1>Helikopter Szerelés</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">Rólunk</a></li>
+                    <li><a href="#services">Szolgáltatások</a></li>
+                    <li><a href="#gallery">Galéria</a></li>
+                    <li><a href="#contact">Kapcsolat</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Rólunk</h2>
+            <p>Üdvözlünk a helikopter szerelés világában! Munkánk során a legmagasabb szintű szakértelemmel és precizitással dolgozunk, hogy a légi járművek mindig biztonságosak és üzemképesek legyenek. Szerelő csapatunk több éves tapasztalattal rendelkezik a helikopterek minden típusának karbantartásában és javításában.</p>
+        </div>
+    </section>
+
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <h2>Szolgáltatásaink</h2>
+            <ul>
+                <li>Helikopterek teljes körű szervizelése</li>
+                <li>Motorjavítás és karbantartás</li>
+                <li>Repülési rendszerek diagnosztikája</li>
+                <li>Szakszerű alkatrészcsere és felszerelés</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2>Galéria</h2>
+            <div class="gallery">
+                <img src="helicopter1.jpg" alt="Helikopter 1">
+                <img src="helicopter2.jpg" alt="Helikopter 2">
+                <img src="helicopter3.jpg" alt="Helikopter 3">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2>Kapcsolat</h2>
+            <p>Ha kérdéseid vannak, vagy szeretnél velünk dolgozni, ne habozz kapcsolatba lépni velünk!</p>
+            <form action="#">
+                <label for="name">Neved:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail cím:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Üzenet:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Küldés</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Helikopter Szerelés. Minden jog fenntartva.</p>
+        </div>
+    </footer>
 </body>
 </html>
